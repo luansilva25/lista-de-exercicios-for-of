@@ -6,11 +6,18 @@
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
     //ENTRADA
-
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10]
+    let pares =[];
 
     //PROCESSAMENTO
-
-
+for(let i=0; i < listaDeItens.length; i++){
+    if(listaDeItens[i] % 2 === 0){
+        pares.push(listaDeItens[i])
+    }
+}
+let qtdPares = pares.length
+let qtdElementos = listaDeItens.length
+alert(`os numeros pares são ${pares}, a quantidade de numeros pares que a array possui é ${qtdPares} e a quantidade de elementos são de ${qtdElementos}`)
     //SAÍDA
 
 </script>

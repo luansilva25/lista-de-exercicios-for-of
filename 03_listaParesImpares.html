@@ -6,10 +6,20 @@
     //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
 
     //ENTRADA
-
-
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let impares = [];
+    let pares = [];
     //PROCESSAMENTO
-
+for(let i= 0;i < listaDeNumeros.length; i++){
+    if(listaDeNumeros[i] % 2 === 0){
+        pares.push(listaDeNumeros[i])
+    }
+    else{
+        impares.push(listaDeNumeros[i])
+    }
+}
+alert(`os numeros pares são ${pares}`)
+alert(`os numeros impares são ${impares}`)
 
     //SAÍDA
 
