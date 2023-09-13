@@ -11,8 +11,9 @@
 
     //PROCESSAMENTO
 for(let i=0;i<listaDeNumeros.length;i++){
-    if(Number.isInteger(listaDeNumeros[i]) && listaDeNumeros[i] > 0){
-        numINTePOS.push(listaDeNumeros[i])
+    const numeros= listaDeNumeros[i]
+    if(Number.isInteger(numeros) && numeros > 0){
+        numINTePOS.push(numeros)
     }
 }
 let qtd= listaDeNumeros.length
