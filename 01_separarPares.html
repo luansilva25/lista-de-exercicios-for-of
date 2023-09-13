@@ -11,12 +11,11 @@
 
     //PROCESSAMENTO
 for(let i=0; i<listaDeNumeros.length;i++){
-    if(listaDeNumeros[i] % 2 === 0){
-        pares.push(listaDeNumeros[i])
+    const separar= listaDeNumeros[i]
+    if(separar % 2 == 0){
+        pares.push(separar)
     }
 }
-pares.sort((a,b) => a-b);
-alert(` os numeros pares em ordem crescente são: ${pares}`)
+alert(`os numeros pares em ordem crescente são: ${pares.sort((a,b) => a-b)}`)
     //SAÍDA
-
 </script>

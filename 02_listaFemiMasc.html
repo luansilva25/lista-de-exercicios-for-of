@@ -15,10 +15,10 @@ let nome = listaDeNomes[i]
 const genero= prompt(`o/a ${nome} é M-masculino ou F-feminino`).toLowerCase()
 
 if(genero == 'm'){
-    Masculino.push(listaDeNomes[i])
+    Masculino.push(nome)
 }
 else if(genero == 'f'){
-    Feminino.push(listaDeNomes[i])
+    Feminino.push(nome)
 }
 else{
     alert('valor invalido')

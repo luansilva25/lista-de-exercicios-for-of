@@ -10,16 +10,17 @@
     let impares = [];
     let pares = [];
     //PROCESSAMENTO
-for(let i= 0;i < listaDeNumeros.length; i++){
-    if(listaDeNumeros[i] % 2 === 0){
-        pares.push(listaDeNumeros[i])
+for(let i=0; i<listaDeNumeros.length;i++){
+    const separar= listaDeNumeros[i]
+    if(separar % 2 == 0){
+        pares.push(separar)
     }
     else{
-        impares.push(listaDeNumeros[i])
+        impares.push(separar)
     }
 }
-alert(`os numeros pares são ${pares}`)
-alert(`os numeros impares são ${impares}`)
+alert(`os numeros pares em ordem crescente são ${pares.sort((a,b) => a-b)} e os numeros em ordem decrescente ${pares.sort((a,b) => b-a)}`)
+alert(`os numeros impares em ordem crescente são ${impares.sort((a,b) => a-b)} e os numeros em ordem crescente ${impares.sort((a,b)=> b-a)}`)
 
     //SAÍDA
 
