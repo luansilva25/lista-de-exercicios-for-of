@@ -10,10 +10,9 @@
     let numINTePOS=[];
 
     //PROCESSAMENTO
-for(let i=0;i<listaDeNumeros.length;i++){
-    const numeros= listaDeNumeros[i]
-    if(Number.isInteger(numeros) && numeros > 0){
-        numINTePOS.push(numeros)
+for(const item of listaDeNumeros){
+    if(Number.isInteger(item) && item > 0){
+        numINTePOS.push(item)
     }
 }
 let qtd= listaDeNumeros.length

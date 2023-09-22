@@ -10,13 +10,12 @@
     let impares = [];
     let pares = [];
     //PROCESSAMENTO
-for(let i=0; i<listaDeNumeros.length;i++){
-    const separar= listaDeNumeros[i]
-    if(separar % 2 == 0){
-        pares.push(separar)
+for(const item of listaDeNumeros){
+    if(item % 2 == 0){
+        pares.push(item)
     }
     else{
-        impares.push(separar)
+        impares.push(item)
     }
 }
 alert(`os numeros pares em ordem crescente são ${pares.sort((a,b) => a-b)} e os numeros em ordem decrescente ${pares.sort((a,b) => b-a)}`)

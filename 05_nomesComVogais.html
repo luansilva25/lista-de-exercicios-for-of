@@ -9,10 +9,11 @@
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"]
     let ordem=[];
     //PROCESSAMENTO
-for(let i=0;i< listaDeNomes.length;i++){
+for(const item of listaDeNomes){
     listaDeNomes.sort()
+    ordem.push(listaDeNomes)
 }
-alert(`a lista de nomes em ordem alfabetica é ${listaDeNomes}`)
+alert(`a lista de nomes em ordem alfabetica é ${ordem}`)
 
     //SAÍDA
 

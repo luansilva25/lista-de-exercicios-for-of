@@ -10,9 +10,8 @@
     let Masculino=[];
     let Feminino=[];
     //PROCESSAMENTO
-for(let i= 0; i < listaDeNomes.length; i++){
-let nome = listaDeNomes[i]
-const genero= prompt(`o/a ${nome} é M-masculino ou F-feminino`).toLowerCase()
+for(const item of listaDeNomes){
+const genero= prompt(`o/a ${item} é M-masculino ou F-feminino`).toLowerCase()
 
 if(genero == 'm'){
     Masculino.push(nome)

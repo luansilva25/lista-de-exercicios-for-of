@@ -10,10 +10,9 @@
     let pares =[];
 
     //PROCESSAMENTO
-for(let i=0; i < listaDeItens.length; i++){
-    const separar=listaDeItens[i]
-    if(separar % 2 == 0){
-        pares.push(separar)
+for(const item of listaDeItens){
+    if(item % 2 == 0){
+        pares.push(item)
     }
 }
 let qtdPares = pares.length

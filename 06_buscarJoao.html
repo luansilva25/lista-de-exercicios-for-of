@@ -9,10 +9,9 @@
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
     let joao=[];
     //PROCESSAMENTO
-    for(let i=0;i<listaDeNomes.length;i++){
-        let joaos=listaDeNomes[i]
-        if(joaos.includes('Joao') || joaos.includes('João')){
-            joao.push(joaos)
+    for(const item of listaDeNomes){
+        if(item.includes('Joao') || item.includes('João')){
+            joao.push(item)
         }
     }
     alert(`os nomes que possuem joão é ${joao}`)
